@@ -1,5 +1,5 @@
 ''' 
-To compile code, run python hmm_pos.py --train=pos.train.txt --test=sample_3.txt
+To compile code, run python hmm_pos_tagger.py --train=pos.train.txt --test=sample_3.txt
 You just need to pass the train text file to train and test text file to test.
 '''
 from __future__ import division
@@ -18,7 +18,7 @@ args = parser.parse_args()
 train_corpus = args.train
 test_file = args.test
 
-print "\nViterbi Algorithm HMM Tagger by Muhammad Abdullah Jamal\n"
+print "\nViterbi Algorithm HMM Tagger\n"
 
 def lemma_input(token):
     if token[-4:] == 'sses' or token[-3:]=='xes':
